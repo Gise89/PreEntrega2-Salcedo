@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: orange;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    padding: 20px;
+}
+.logo{
+    float: left;
+    font-weight: bold;
+    color: #fff
+}
+.logo span{
+    color:#000;
+}
+.barra{
+    float: right;
+}
+
+.barra ul li{
+    list-style: none;
+    display: inline-block;
+}
+.barra a{
+    text-decoration: none;
+    color: #fff;
+}
+.barra a:hover{
+    color: #333;   
+}
+main{
+    height: 75vh;
+    width: 100%;
+    background-color: #333;
+    background-image: url(img/picada.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.productos{
+    height: auto;
+    width: 100%;
+    background-color: yellow;
+}
+.pleft{
+    height: 470px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/picadas.jpg)
+}
+.pright{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.pright h3{
+    text-align: center;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+.call{
+    color: #fff;
+    width: 60%;
+    float: right;
+    background-color: rgba(0, 0, 1, 0.508);
+    border: 3px solid orange;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+    overflow: auto;
+}
+.call h1{
+    color: orange;
+    margin-bottom: 20px;
+}
+.call p{
+    margin-bottom: 30px
+}
+.call a{
+    background-color: orange;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.call a:hover{
+    background-color: #333;
+    border: 2px solid rgba(255, 166, 0, 0.949);
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    background-color:rgba(255, 166, 0, 0.949);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+    text-shadow: 0 0 5px #333;
+}
+h3{
+    text-align: center;
+    background-color:orange;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+    text-shadow: 0 0 5px #333;
+}
+.sec{
+    height: 700px;
+    width: 100%;
+    background-color: #333;
+}
+.item{
+    height: 120px;
+    width: 120px;
+    background-color: orange;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 120px;
+    font-size: 20px;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+    text-align: center;
+    font-size: 25px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+footer{
+    margin-bottom: 15px;
+}
+footer i{
+    font-size: 30px;
+    letter-spacing: 20px;
+    color: orange;
+}
+
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: orange;
+    color: #fff;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 0 5px #fff;
+}
+.form-tabla{
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid orange;
+    border-radius: 15px;
+ }
+.form-tabla input.wpcf7-text, .form-tabla textarea {
+    display: block;
+    width: 80%;
+    padding: 5px 10px;
+    margin: 5px 0 0px; 
+}
+.cotiza-datos label {
+    display: block;
+    margin: 10px 0 0;
+}
+marquee{
+    width: 100%;
+    background-color: orange;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+
+}
+.galeria{
+    height: auto;
+    width: 100%;
+    background-color: rgb(248, 189, 79);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 180px);
+    grid-template-areas: 
+    "img1 img2 img3 img6"
+    "img1 img4 img5 img6"
+    "img7 img4 img8 img8"
+    ;
+    padding: 10px;
+    grid-gap: 10px;  
+}
+.product{
+    border: 3px solid #000;
+    background-size: cover;
+    background-position: center;
+    border-radius: 9px;
+}
+.product1{
+    grid-area: img1;
+    background-image: url(img/1.jpg);
+}
+.product2{
+    grid-area: img2;
+    background-image: url(img/sandwich.jpg)
+}
+.product3{
+    grid-area: img3;
+    background-image: url(img/3.jpg);
+
+}
+.product4{
+    grid-area: img4;
+    background-image: url(img/4.jpg);
+}
+.product5{
+    grid-area: img5;
+    background-image: url(img/pan.jpg);
+}
+.product6{
+    grid-area: img6;
+    background-image: url(img/PIC\ 2.jpg);
+}
+.product7{
+    grid-area: img7;
+    background-image: url(img/preparando\ mayonesa.jpg);
+}
+.product8{
+    grid-area: img8;
+    background-image: url(img/jamon.jpg);
+}
+.tablita{
+    height: 50vh;
+    width: 100%;
+    background-color: #333;
+    background-image: url(img/picadas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+aside{
+    height: 100px;
+    background-color: #fff;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    padding: 15px;
+    text-align: center;
+}
+article{
+    background-color: rgb(235, 202, 140);
+    border: 2px solid #fff;
+    height: 300px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width: 772){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+    .productos{
+        display: flex;
+    }
+    .pright, .pleft{
+        width: 50%;
+    }
+}
+
+@media only screen and (win-width: 1415px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
