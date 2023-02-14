@@ -1,3 +1,7 @@
+$color-primario: orange;
+$color-secundario: #000;
+$color-tercero: #fff;
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +14,7 @@ html{
 header{
     height: 80px;
     width: 100%;
-    background-color: orange;
+    background-color: $color-primario;
     font-size: 22px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: capitalize;
@@ -19,10 +23,10 @@ header{
 .logo{
     float: left;
     font-weight: bold;
-    color: #fff
+    color: $color-tercero;
 }
 .logo span{
-    color:#000;
+    color: $color-secundario;
 }
 .barra{
     float: right;
@@ -34,7 +38,7 @@ header{
 }
 .barra a{
     text-decoration: none;
-    color: #fff;
+    color: $color-tercero;
 }
 .barra a:hover{
     color: #333;   
@@ -61,7 +65,7 @@ main{
 .pright{
     height: auto;
     width: 100%;
-    background-color: #fff;
+    background-color: $color-tercero;
     padding: 20px;
 }
 .pright h3{
@@ -72,33 +76,35 @@ main{
 }
 
 .call{
-    color: #fff;
+    color: $color-tercero;
     width: 60%;
     float: right;
     background-color: rgba(0, 0, 1, 0.508);
-    border: 3px solid orange;
+    border: 3px solid $color-primario;
     padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 30px;
     overflow: auto;
 }
-.call h1{
-    color: orange;
-    margin-bottom: 20px;
-}
-.call p{
-    margin-bottom: 30px
-}
-.call a{
-    background-color: orange;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-.call a:hover{
-    background-color: #333;
-    border: 2px solid rgba(255, 166, 0, 0.949);
+.call{
+    h1{
+        color: $color-primario;
+        margin-bottom: 20px;
+    }
+    .call p{
+        margin-bottom: 30px
+    } 
+    .call a{
+        background-color: $color-primario;
+        color: $color-tercero;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        }
+    .call a:hover{
+        background-color: $color-secundario;
+        border: 2px solid rgba(255, 166, 0, 0.949);
+    }
 }
 h1{
     text-align: center;
@@ -119,7 +125,7 @@ h2{
 }
 h3{
     text-align: center;
-    background-color:orange;
+    background-color:$color-primario;
     font-size: 30px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -135,8 +141,8 @@ h3{
 .item{
     height: 120px;
     width: 120px;
-    background-color: orange;
-    border: 2px solid #fff;
+    background-color: $color-primario;
+    border: 2px solid $color-tercero;
     text-align: center;
     line-height: 120px;
     font-size: 20px;
@@ -147,40 +153,37 @@ h3{
 footer{
     text-align: center;
     font-size: 25px;
-    background-color: #000;
-    color: #fff;
+    background-color: $color-secundario;
+    color: $color-tercero;
     font-family: 'Times New Roman', Times, serif;
     padding: 20px;
-}
-footer{
     margin-bottom: 15px;
+        footer i{
+                font-size: 30px;
+                letter-spacing: 20px;
+                color: $color-primario;
+                }
 }
-footer i{
-    font-size: 30px;
-    letter-spacing: 20px;
-    color: orange;
-}
-
 .subir{
     height: 40px;
     width: 40px;
-    background-color: orange;
-    color: #fff;
+    background-color: $color-primario;
+    color: $color-tercero;
     position: fixed;
     right: 40px;
     bottom: 40px;
     font-size: 30px;
     text-align: center;
     line-height: 40px;
-    box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px $color-tercero;
 }
 .form-tabla{
     width: 80%;
     margin: auto;
     padding: 30px;
-    border: 2px solid orange;
+    border: 2px solid $color-primario;
     border-radius: 15px;
- }
+}
 .form-tabla input.wpcf7-text, .form-tabla textarea {
     display: block;
     width: 80%;
@@ -193,7 +196,7 @@ footer i{
 }
 marquee{
     width: 100%;
-    background-color: orange;
+    background-color: $color-primario;
     background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
@@ -219,39 +222,38 @@ marquee{
     background-size: cover;
     background-position: center;
     border-radius: 9px;
-}
-.product1{
-    grid-area: img1;
-    background-image: url(img/1.jpg);
-}
-.product2{
-    grid-area: img2;
-    background-image: url(img/sandwich.jpg)
-}
-.product3{
-    grid-area: img3;
-    background-image: url(img/3.jpg);
-
-}
-.product4{
-    grid-area: img4;
-    background-image: url(img/4.jpg);
-}
-.product5{
-    grid-area: img5;
-    background-image: url(img/pan.jpg);
-}
-.product6{
-    grid-area: img6;
-    background-image: url(img/PIC\ 2.jpg);
-}
-.product7{
-    grid-area: img7;
-    background-image: url(img/preparando\ mayonesa.jpg);
-}
-.product8{
-    grid-area: img8;
-    background-image: url(img/jamon.jpg);
+        .product1{
+                grid-area: img1;
+                background-image: url(img/1.jpg);
+                }
+        .product2{
+                grid-area: img2;
+                background-image: url(img/sandwich.jpg)
+                }
+        .product3{
+                grid-area: img3;
+                background-image: url(img/3.jpg);
+                }  
+        .product4{
+                grid-area: img4;
+                background-image: url(img/4.jpg);
+                }
+        .product5{
+                grid-area: img5;
+                background-image: url(img/pan.jpg);
+                }
+        .product6{
+                grid-area: img6;
+                background-image: url(img/PIC\ 2.jpg);
+                }
+        .product7{
+                grid-area: img7;
+                background-image: url(img/preparando\ mayonesa.jpg);
+                }
+        .product8{
+                grid-area: img8;
+                background-image: url(img/jamon.jpg);
+                }
 }
 .tablita{
     height: 50vh;
@@ -263,7 +265,7 @@ marquee{
 }
 aside{
     height: 100px;
-    background-color: #fff;
+    background-color: $color-tercero;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: capitalize;
@@ -272,7 +274,7 @@ aside{
 }
 article{
     background-color: rgb(235, 202, 140);
-    border: 2px solid #fff;
+    border: 2px solid $color-tercero;
     height: 300px;
     text-align: center;
     text-transform: capitalize;
